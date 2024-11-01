@@ -5,7 +5,7 @@ import db from './db.js';
 let server;
 // Sequelize sync only for dev purposes
 db.authenticate()
-  .then(() => db.sync({ alter: true }))
+  .then(() => db.sync())
   .then(() => {
     server = app.listen(config.server.port, () => {
       //Temporary logger
