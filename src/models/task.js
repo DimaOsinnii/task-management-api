@@ -23,11 +23,11 @@ import { TASK_STATUS } from '../constants.js';
  *         status:
  *           type: string
  *           enum:
- *             - DONE
- *             - TODO
- *             - IN_PROGRESS
+ *             - done
+ *             - todo
+ *             - in-progress
  *           description: The status of the task.
- *           example: "TODO"
+ *           example: "todo"
  *         createdAt:
  *           type: string
  *           format: date-time
