@@ -19,6 +19,7 @@ export const authOnly = catchAsync((req, res, next) => {
 
   try {
     req.user = verify(token);
+    // eslint-disable-next-line no-unused-vars
   } catch (error) {
     clearAccessTokenCookie(req, res);
     return res.status(httpStatus.UNAUTHORIZED).send({

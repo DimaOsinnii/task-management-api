@@ -17,6 +17,7 @@ app.use(cookieParser());
 
 app.use('/', router);
 
+// eslint-disable-next-line no-unused-vars
 app.use((req, res, next) => {
   return res.status(httpStatus.NOT_IMPLEMENTED).send({
     error: httpStatus[httpStatus.NOT_IMPLEMENTED],
